@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGImageBrowser">
+            <connections>
+                <outlet property="allImagesBtn" destination="aJ1-2k-vPt" id="8B7-ZT-W7c"/>
+                <outlet property="collectionView" destination="Wi6-0c-hEj" id="Ggs-Zp-tCJ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gIo-wU-a1Q"/>
+                <outlet property="downLoadOriginImageBtn" destination="Rqj-zZ-pHl" id="ujk-Gl-xQ9"/>
+                <outlet property="flowLayout" destination="JFW-AO-KCb" id="ZWM-Ld-hpb"/>
+                <outlet property="saveImageBtn" destination="J2s-NG-9iK" id="r7h-cM-g29"/>
+                <outlet property="successView" destination="isd-2j-Hfc" id="Y6J-gQ-qdB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SGImageBrowser">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Wi6-0c-hEj">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JFW-AO-KCb">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VYK-Z9-IX5"/>
+                        <outlet property="delegate" destination="-1" id="YdC-6o-KHS"/>
+                    </connections>
+                </collectionView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqj-zZ-pHl">
+                    <rect key="frame" x="158.5" y="622" width="58" height="25"/>
+                    <color key="backgroundColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="dHK-L1-6cC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="查看原图">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="downLoadOriginImageBtnClick:" destination="-1" eventType="touchUpInside" id="L8z-dV-iHp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2s-NG-9iK">
+                    <rect key="frame" x="329" y="622" width="26" height="26"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="Q1b-Wg-1Va"/>
+                        <constraint firstAttribute="width" secondItem="J2s-NG-9iK" secondAttribute="height" multiplier="1:1" id="cMu-pc-8Vm"/>
+                    </constraints>
+                    <state key="normal" image="image_browser_save_local.png"/>
+                    <connections>
+                        <action selector="saveImageBtnClick:" destination="-1" eventType="touchUpInside" id="naB-ZB-GYP"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isd-2j-Hfc">
+                    <rect key="frame" x="127.5" y="273.5" width="120" height="120"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_browser_saved.png" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-zo-krI">
+                            <rect key="frame" x="18" y="5" width="84" height="84"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wMe-zo-krI" secondAttribute="height" multiplier="1:1" id="gDq-hu-nYD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已保存到系统相册" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-CY-LXg">
+                            <rect key="frame" x="0.0" y="83" width="120" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.058823529411764705" green="0.058823529411764705" blue="0.058823529411764705" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wMe-zo-krI" firstAttribute="centerX" secondItem="isd-2j-Hfc" secondAttribute="centerX" id="8YG-CC-skx"/>
+                        <constraint firstItem="wMe-zo-krI" firstAttribute="width" secondItem="isd-2j-Hfc" secondAttribute="width" multiplier="0.7" id="8bz-MZ-Vfa"/>
+                        <constraint firstItem="wMe-zo-krI" firstAttribute="top" secondItem="isd-2j-Hfc" secondAttribute="top" constant="5" id="A2i-q4-2G5"/>
+                        <constraint firstAttribute="width" secondItem="isd-2j-Hfc" secondAttribute="height" multiplier="1:1" id="Bdc-SS-cKG"/>
+                        <constraint firstAttribute="bottom" secondItem="Grs-CY-LXg" secondAttribute="bottom" constant="20" id="Orp-XX-Fve"/>
+                        <constraint firstAttribute="trailing" secondItem="Grs-CY-LXg" secondAttribute="trailing" id="VJO-8g-OTb"/>
+                        <constraint firstAttribute="width" constant="120" id="X1d-17-TIJ"/>
+                        <constraint firstItem="Grs-CY-LXg" firstAttribute="leading" secondItem="isd-2j-Hfc" secondAttribute="leading" id="aaW-0r-aJa"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ1-2k-vPt">
+                    <rect key="frame" x="329" y="20" width="26" height="26"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aJ1-2k-vPt" secondAttribute="height" multiplier="1:1" id="HBe-Rr-8E2"/>
+                    </constraints>
+                    <state key="normal" image="image_browser_image_all.png"/>
+                    <connections>
+                        <action selector="allImagesBtnClick:" destination="-1" eventType="touchUpInside" id="pXk-f1-1ck"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="isd-2j-Hfc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0It-qx-9Ic"/>
+                <constraint firstItem="aJ1-2k-vPt" firstAttribute="width" secondItem="J2s-NG-9iK" secondAttribute="width" id="6MM-5M-hTW"/>
+                <constraint firstItem="Wi6-0c-hEj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="20" id="NtZ-Oa-5lJ"/>
+                <constraint firstItem="aJ1-2k-vPt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RId-NB-NNs"/>
+                <constraint firstItem="Wi6-0c-hEj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SwX-hM-4fX"/>
+                <constraint firstAttribute="trailing" secondItem="J2s-NG-9iK" secondAttribute="trailing" constant="20" id="Tvd-2O-ymm"/>
+                <constraint firstAttribute="bottom" secondItem="Rqj-zZ-pHl" secondAttribute="bottom" constant="20" id="and-F7-Zyk"/>
+                <constraint firstAttribute="bottom" secondItem="Wi6-0c-hEj" secondAttribute="bottom" id="eHe-HK-UOh"/>
+                <constraint firstItem="isd-2j-Hfc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ldL-XX-Kzq"/>
+                <constraint firstItem="J2s-NG-9iK" firstAttribute="centerY" secondItem="Rqj-zZ-pHl" secondAttribute="centerY" id="rD7-0R-emq"/>
+                <constraint firstItem="Wi6-0c-hEj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sCF-t5-bfn"/>
+                <constraint firstItem="Rqj-zZ-pHl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sZp-zL-zbL"/>
+                <constraint firstItem="aJ1-2k-vPt" firstAttribute="centerX" secondItem="J2s-NG-9iK" secondAttribute="centerX" id="xly-bi-nT3"/>
+            </constraints>
+            <point key="canvasLocation" x="99.5" y="71.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_browser_image_all.png" width="196" height="196"/>
+        <image name="image_browser_save_local.png" width="182" height="182"/>
+        <image name="image_browser_saved.png" width="185" height="185"/>
+    </resources>
+</document>

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B294F9BFB16547BB0F2DD59 /* libPods-SGImageBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69053ED2C1ED5DC18E922B5F /* libPods-SGImageBrowserUITests.a */; };
+		8583DB29202AACEC0022440F /* UIAlertController+SG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB27202AACEC0022440F /* UIAlertController+SG.m */; };
+		8583DB32202AD9F80022440F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB30202AD9F80022440F /* CollectionViewCell.m */; };
+		8583DB33202AD9F80022440F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8583DB31202AD9F80022440F /* CollectionViewCell.xib */; };
+		8583DB36202AE77A0022440F /* SGImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB34202AE77A0022440F /* SGImageBrowser.m */; };
+		8583DB38202AE78E0022440F /* SGImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8583DB37202AE78E0022440F /* SGImageBrowser.xib */; };
+		8583DB3C202BF8120022440F /* UIApplication+SG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB3B202BF8120022440F /* UIApplication+SG.m */; };
 		85DF9E9C20293ABC0001D896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9E9B20293ABC0001D896 /* AppDelegate.m */; };
 		85DF9E9F20293ABD0001D896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9E9E20293ABD0001D896 /* ViewController.m */; };
 		85DF9EA220293ABD0001D896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9EA020293ABD0001D896 /* Main.storyboard */; };
@@ -14,6 +21,12 @@
 		85DF9EA720293ABD0001D896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9EA520293ABD0001D896 /* LaunchScreen.storyboard */; };
 		85DF9EAA20293ABD0001D896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9EA920293ABD0001D896 /* main.m */; };
 		85DF9EB420293ABD0001D896 /* SGImageBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9EB320293ABD0001D896 /* SGImageBrowserUITests.m */; };
+		85DF9FDC20298F790001D896 /* SGImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9FD520298F780001D896 /* SGImageBrowserCell.m */; };
+		85DF9FDD20298F790001D896 /* SGImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9FD620298F780001D896 /* SGImageBrowserCell.xib */; };
+		85DF9FDE20298F790001D896 /* image_browser_save_local.png in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9FD820298F780001D896 /* image_browser_save_local.png */; };
+		85DF9FDF20298F790001D896 /* image_browser_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9FD920298F780001D896 /* image_browser_saved.png */; };
+		85DF9FE020298F790001D896 /* image_browser_image_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9FDA20298F780001D896 /* image_browser_image_all.png */; };
+		C1234381AAD00EAE75A5837F /* libPods-SGImageBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C17C852EE45107D183C48F0 /* libPods-SGImageBrowser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C17C852EE45107D183C48F0 /* libPods-SGImageBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGImageBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFAB41CDF4109EB98ADB666 /* Pods-SGImageBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageBrowser/Pods-SGImageBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		69053ED2C1ED5DC18E922B5F /* libPods-SGImageBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGImageBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8583DB27202AACEC0022440F /* UIAlertController+SG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SG.m"; sourceTree = "<group>"; };
+		8583DB28202AACEC0022440F /* UIAlertController+SG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SG.h"; sourceTree = "<group>"; };
+		8583DB2F202AD9F80022440F /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		8583DB30202AD9F80022440F /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		8583DB31202AD9F80022440F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		8583DB34202AE77A0022440F /* SGImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGImageBrowser.m; sourceTree = "<group>"; };
+		8583DB35202AE77A0022440F /* SGImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGImageBrowser.h; sourceTree = "<group>"; };
+		8583DB37202AE78E0022440F /* SGImageBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGImageBrowser.xib; sourceTree = "<group>"; };
+		8583DB3A202BF8120022440F /* UIApplication+SG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SG.h"; sourceTree = "<group>"; };
+		8583DB3B202BF8120022440F /* UIApplication+SG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SG.m"; sourceTree = "<group>"; };
 		85DF9E9720293ABC0001D896 /* SGImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DF9E9A20293ABC0001D896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85DF9E9B20293ABC0001D896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +66,16 @@
 		85DF9EAF20293ABD0001D896 /* SGImageBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGImageBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DF9EB320293ABD0001D896 /* SGImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGImageBrowserUITests.m; sourceTree = "<group>"; };
 		85DF9EB520293ABD0001D896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85DF9FD120298AED0001D896 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		85DF9FD320298F780001D896 /* SGImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGImageBrowserCell.h; sourceTree = "<group>"; };
+		85DF9FD520298F780001D896 /* SGImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGImageBrowserCell.m; sourceTree = "<group>"; };
+		85DF9FD620298F780001D896 /* SGImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGImageBrowserCell.xib; sourceTree = "<group>"; };
+		85DF9FD820298F780001D896 /* image_browser_save_local.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_browser_save_local.png; sourceTree = "<group>"; };
+		85DF9FD920298F780001D896 /* image_browser_saved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_browser_saved.png; sourceTree = "<group>"; };
+		85DF9FDA20298F780001D896 /* image_browser_image_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_browser_image_all.png; sourceTree = "<group>"; };
+		8A40864D43149DB336C3E5EC /* Pods-SGImageBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageBrowserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageBrowserUITests/Pods-SGImageBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9BEEE522630F8BB1F2C65D /* Pods-SGImageBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageBrowserUITests/Pods-SGImageBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF66EF72684E5D43C37540DF /* Pods-SGImageBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGImageBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGImageBrowser/Pods-SGImageBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1234381AAD00EAE75A5837F /* libPods-SGImageBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +91,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B294F9BFB16547BB0F2DD59 /* libPods-SGImageBrowserUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DEC68AA8739B7018D65E62B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF66EF72684E5D43C37540DF /* Pods-SGImageBrowser.debug.xcconfig */,
+				5AFAB41CDF4109EB98ADB666 /* Pods-SGImageBrowser.release.xcconfig */,
+				8A40864D43149DB336C3E5EC /* Pods-SGImageBrowserUITests.debug.xcconfig */,
+				9D9BEEE522630F8BB1F2C65D /* Pods-SGImageBrowserUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8583DB26202AACEC0022440F /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				8583DB28202AACEC0022440F /* UIAlertController+SG.h */,
+				8583DB27202AACEC0022440F /* UIAlertController+SG.m */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		8583DB39202BF7F90022440F /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				8583DB3A202BF8120022440F /* UIApplication+SG.h */,
+				8583DB3B202BF8120022440F /* UIApplication+SG.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		85DF9E8E20293ABC0001D896 = {
 			isa = PBXGroup;
 			children = (
 				85DF9E9920293ABC0001D896 /* SGImageBrowser */,
 				85DF9EB220293ABD0001D896 /* SGImageBrowserUITests */,
 				85DF9E9820293ABC0001D896 /* Products */,
+				6DEC68AA8739B7018D65E62B /* Pods */,
+				C8D32482A60C6C11DBB36909 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +150,13 @@
 		85DF9E9920293ABC0001D896 /* SGImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				85DF9E9A20293ABC0001D896 /* AppDelegate.h */,
-				85DF9E9B20293ABC0001D896 /* AppDelegate.m */,
+				85DF9FD220298F780001D896 /* SGImageBrowser */,
+				8583DB2F202AD9F80022440F /* CollectionViewCell.h */,
+				8583DB30202AD9F80022440F /* CollectionViewCell.m */,
+				8583DB31202AD9F80022440F /* CollectionViewCell.xib */,
 				85DF9E9D20293ABD0001D896 /* ViewController.h */,
 				85DF9E9E20293ABD0001D896 /* ViewController.m */,
-				85DF9EA020293ABD0001D896 /* Main.storyboard */,
-				85DF9EA320293ABD0001D896 /* Assets.xcassets */,
-				85DF9EA520293ABD0001D896 /* LaunchScreen.storyboard */,
-				85DF9EA820293ABD0001D896 /* Info.plist */,
-				85DF9EA920293ABD0001D896 /* main.m */,
+				85DF9EBE20293B100001D896 /* Supporting Files */,
 			);
 			path = SGImageBrowser;
 			sourceTree = "<group>";
@@ -103,6 +170,64 @@
 			path = SGImageBrowserUITests;
 			sourceTree = "<group>";
 		};
+		85DF9EBE20293B100001D896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85DF9E9A20293ABC0001D896 /* AppDelegate.h */,
+				85DF9E9B20293ABC0001D896 /* AppDelegate.m */,
+				85DF9EA020293ABD0001D896 /* Main.storyboard */,
+				85DF9EA320293ABD0001D896 /* Assets.xcassets */,
+				85DF9EA520293ABD0001D896 /* LaunchScreen.storyboard */,
+				85DF9EA820293ABD0001D896 /* Info.plist */,
+				85DF9EA920293ABD0001D896 /* main.m */,
+				85DF9FD120298AED0001D896 /* Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85DF9FD220298F780001D896 /* SGImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				85DF9FE2202993620001D896 /* Categorys */,
+				85DF9FD720298F780001D896 /* Resource */,
+				8583DB35202AE77A0022440F /* SGImageBrowser.h */,
+				8583DB34202AE77A0022440F /* SGImageBrowser.m */,
+				8583DB37202AE78E0022440F /* SGImageBrowser.xib */,
+				85DF9FD320298F780001D896 /* SGImageBrowserCell.h */,
+				85DF9FD520298F780001D896 /* SGImageBrowserCell.m */,
+				85DF9FD620298F780001D896 /* SGImageBrowserCell.xib */,
+			);
+			path = SGImageBrowser;
+			sourceTree = "<group>";
+		};
+		85DF9FD720298F780001D896 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85DF9FD820298F780001D896 /* image_browser_save_local.png */,
+				85DF9FD920298F780001D896 /* image_browser_saved.png */,
+				85DF9FDA20298F780001D896 /* image_browser_image_all.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		85DF9FE2202993620001D896 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				8583DB39202BF7F90022440F /* UIApplication */,
+				8583DB26202AACEC0022440F /* UIAlertController */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		C8D32482A60C6C11DBB36909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C17C852EE45107D183C48F0 /* libPods-SGImageBrowser.a */,
+				69053ED2C1ED5DC18E922B5F /* libPods-SGImageBrowserUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85DF9EB820293ABD0001D896 /* Build configuration list for PBXNativeTarget "SGImageBrowser" */;
 			buildPhases = (
+				2E18E708ADB14FF2F0499E15 /* [CP] Check Pods Manifest.lock */,
 				85DF9E9320293ABC0001D896 /* Sources */,
 				85DF9E9420293ABC0001D896 /* Frameworks */,
 				85DF9E9520293ABC0001D896 /* Resources */,
+				BD9D09A0FEE6F13DD9AE6F3C /* [CP] Embed Pods Frameworks */,
+				50CF1C876C0936985D658B81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85DF9EBB20293ABD0001D896 /* Build configuration list for PBXNativeTarget "SGImageBrowserUITests" */;
 			buildPhases = (
+				5C33DD21F90D895BFA94F390 /* [CP] Check Pods Manifest.lock */,
 				85DF9EAB20293ABD0001D896 /* Sources */,
 				85DF9EAC20293ABD0001D896 /* Frameworks */,
 				85DF9EAD20293ABD0001D896 /* Resources */,
+				FEE86281DA79B881D0248E5A /* [CP] Embed Pods Frameworks */,
+				E1C0AFA406D106D54860071B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DF9FDF20298F790001D896 /* image_browser_saved.png in Resources */,
+				85DF9FE020298F790001D896 /* image_browser_image_all.png in Resources */,
+				85DF9FDD20298F790001D896 /* SGImageBrowserCell.xib in Resources */,
+				85DF9FDE20298F790001D896 /* image_browser_save_local.png in Resources */,
 				85DF9EA720293ABD0001D896 /* LaunchScreen.storyboard in Resources */,
 				85DF9EA420293ABD0001D896 /* Assets.xcassets in Resources */,
 				85DF9EA220293ABD0001D896 /* Main.storyboard in Resources */,
+				8583DB33202AD9F80022440F /* CollectionViewCell.xib in Resources */,
+				8583DB38202AE78E0022440F /* SGImageBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +337,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E18E708ADB14FF2F0499E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SGImageBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CF1C876C0936985D658B81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageBrowser/Pods-SGImageBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C33DD21F90D895BFA94F390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SGImageBrowserUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9D09A0FEE6F13DD9AE6F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageBrowser/Pods-SGImageBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C0AFA406D106D54860071B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageBrowserUITests/Pods-SGImageBrowserUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE86281DA79B881D0248E5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGImageBrowserUITests/Pods-SGImageBrowserUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		85DF9E9320293ABC0001D896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DF9FDC20298F790001D896 /* SGImageBrowserCell.m in Sources */,
 				85DF9E9F20293ABD0001D896 /* ViewController.m in Sources */,
+				8583DB29202AACEC0022440F /* UIAlertController+SG.m in Sources */,
+				8583DB36202AE77A0022440F /* SGImageBrowser.m in Sources */,
+				8583DB3C202BF8120022440F /* UIApplication+SG.m in Sources */,
 				85DF9EAA20293ABD0001D896 /* main.m in Sources */,
 				85DF9E9C20293ABC0001D896 /* AppDelegate.m in Sources */,
+				8583DB32202AD9F80022440F /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,11 +596,14 @@
 		};
 		85DF9EB920293ABD0001D896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF66EF72684E5D43C37540DF /* Pods-SGImageBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZL6WT6TS;
-				INFOPLIST_FILE = SGImageBrowser/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SGImageBrowser/Supporting Files/Header.h";
+				INFOPLIST_FILE = "SGImageBrowser/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = club.shanguo.SGImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,11 +613,14 @@
 		};
 		85DF9EBA20293ABD0001D896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AFAB41CDF4109EB98ADB666 /* Pods-SGImageBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZL6WT6TS;
-				INFOPLIST_FILE = SGImageBrowser/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SGImageBrowser/Supporting Files/Header.h";
+				INFOPLIST_FILE = "SGImageBrowser/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = club.shanguo.SGImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +630,7 @@
 		};
 		85DF9EBC20293ABD0001D896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A40864D43149DB336C3E5EC /* Pods-SGImageBrowserUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZL6WT6TS;
@@ -397,6 +645,7 @@
 		};
 		85DF9EBD20293ABD0001D896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9BEEE522630F8BB1F2C65D /* Pods-SGImageBrowserUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39ZL6WT6TS;
