@@ -9,8 +9,7 @@
 #import "SGImageBrowser.h"
 #import "SGImageBrowserCell.h"
 #import "UIAlertController+SG.h"
-#import <MBProgressHUD.h>
-#import <SDWebImage/SDWebImageManager.h>
+#import "SDWebImage/SDWebImageManager.h"
 #import <Photos/Photos.h>
 #import "UIApplication+SG.h"
 

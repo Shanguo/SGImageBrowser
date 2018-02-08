@@ -7,9 +7,9 @@
 //
 
 #import "SGImageBrowserCell.h"
-#import <MBProgressHUD/MBProgressHUD.h>
-#import <SDWebImage/SDWebImageDownloader.h>
-#import <SDWebImage/UIImageView+WebCache.h>
+#import "MBProgressHUD/MBProgressHUD.h"
+#import "SDWebImage/SDWebImageDownloader.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 static CGFloat const kMaximumZoomScale = 3.;
 static CGFloat const kMiddleZoomScale  = 2.;
