@@ -13,7 +13,7 @@
  数据源回调block.
 
  @param targetImageView 第index个 imageView _Nullable
- @param targetImageOrName 第index个 image
+ @param targetImageOrName 第index个 image 可以是本地图片的名称
  @param targetAutoLoadImageUrl  第index个 自动下载更清晰的图片url String or URL nullable
  @param targetOriginImageUrl 第index个 高清图片url可用于显示原图的按钮，当autoLoadUrl不存在时使用这个url String or URL nullable
  @param targetOriginImageSize 第index个 高清图片大小 NSString，设置好NSString直接填充
