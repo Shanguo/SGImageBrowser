@@ -43,7 +43,10 @@ static CGFloat const kLineSpacing = 20;
 {
     self = [super initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
     if (self) {
-        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+//        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSBundle *podBundle = [NSBundle bundleForClass:[self class]];
+        NSURL *url = [podBundle URLForResource:NSStringFromClass([self class]) withExtension:@"bundle"];
+        NSBundle *currentBundle = [NSBundle bundleWithURL:url];
         self.contentView = [[currentBundle loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];//(owner:self ，firstObject必要)
         self.contentView.frame = self.bounds;
         [self addSubview:self.contentView];
