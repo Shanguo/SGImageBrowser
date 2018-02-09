@@ -43,12 +43,13 @@ static CGFloat const kLineSpacing = 20;
 {
     self = [super initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
     if (self) {
-        self.contentView = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];//(owner:self ，firstObject必要)
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        self.contentView = [[currentBundle loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];//(owner:self ，firstObject必要)
         self.contentView.frame = self.bounds;
         [self addSubview:self.contentView];
         [self.contentView setBackgroundColor:[UIColor blackColor]];
         [self.contentView addSubview:self.successView];
-        [self.collectionView registerNib:[UINib nibWithNibName:kSGImageBrowserCellID bundle:nil] forCellWithReuseIdentifier:kSGImageBrowserCellID];
+        [self.collectionView registerNib:[UINib nibWithNibName:kSGImageBrowserCellID bundle:currentBundle] forCellWithReuseIdentifier:kSGImageBrowserCellID];
         
         self.saveImageBtn.layer.cornerRadius = kCornerRadius;
         self.saveImageBtn.layer.masksToBounds = YES;
