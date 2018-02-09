@@ -40,7 +40,7 @@ static CGFloat const kLineSpacing = 20;
 @implementation SGImageBrowser
 
 // 发布版与本地运行版 Bundle 不一样，Pod打包的Bundle不是MainBundle
-- (NSBundle *)loadBoundle {
++ (NSBundle *)loadBoundle {
 //    NSBundle *currentBundle = [NSBundle mainBundle];
     NSBundle *podBundle = [NSBundle bundleForClass:[self class]];
     NSURL *url = [podBundle URLForResource:NSStringFromClass([self class]) withExtension:@"bundle"];
@@ -54,7 +54,7 @@ static CGFloat const kLineSpacing = 20;
     static SGImageBrowser *shared;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shared = [[SGImageBrowser alloc] initWithNibName:NSStringFromClass([self class]) bundle:[shared loadBoundle]];
+        shared = [[SGImageBrowser alloc] initWithNibName:NSStringFromClass([self class]) bundle:[[self class] loadBoundle]];
     });
     return shared;
 }
@@ -111,7 +111,7 @@ static CGFloat const kLineSpacing = 20;
     [self.downLoadOriginImageBtn setContentEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 10)];
     self.successView.layer.cornerRadius = 5;
     self.successView.layer.masksToBounds = YES;
-    [self.collectionView registerNib:[UINib nibWithNibName:kSGImageBrowserCellID bundle:[self loadBoundle]] forCellWithReuseIdentifier:kSGImageBrowserCellID];
+    [self.collectionView registerNib:[UINib nibWithNibName:kSGImageBrowserCellID bundle:[[self class] loadBoundle]] forCellWithReuseIdentifier:kSGImageBrowserCellID];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
