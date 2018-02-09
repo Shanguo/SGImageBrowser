@@ -1,17 +1,16 @@
 //
 //  SGImageBrowser.h
-//  WXHelper
+//  SGImageBrowser
 //
-//  Created by 刘山国 on 16/3/31.
-//  Copyright © 2016年 山国. All rights reserved.
+//  Created by 刘山国 on 2018/2/9.
+//  Copyright © 2018年 山国. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-
 /**
  数据源回调block.
-
+ 
  @param targetImageView 第index个 imageView _Nullable
  @param targetImageOrName 第index个 image 可以是本地图片的名称
  @param targetAutoLoadImageUrl  第index个 自动下载更清晰的图片url String or URL nullable
@@ -21,7 +20,7 @@
 typedef void (^SGImageBrowserDataSourceBlock)(UIImageView * _Nullable targetImageView, id _Nullable targetImageOrName, id _Nullable targetAutoLoadImageUrl, id _Nullable targetOriginImageUrl, NSString * _Nullable targetOriginImageSize);
 typedef void (^SGImageBrowserDataSourceGetter)(NSInteger index, SGImageBrowserDataSourceBlock _Nonnull dataSourceBlock);
 
-@interface SGImageBrowser : UIView
+@interface SGImageBrowser : UIViewController
 
 /**
  单例

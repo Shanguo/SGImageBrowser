@@ -15,15 +15,15 @@
             <connections>
                 <outlet property="allImagesBtn" destination="aJ1-2k-vPt" id="8B7-ZT-W7c"/>
                 <outlet property="collectionView" destination="Wi6-0c-hEj" id="Ggs-Zp-tCJ"/>
-                <outlet property="contentView" destination="iN0-l3-epB" id="gIo-wU-a1Q"/>
                 <outlet property="downLoadOriginImageBtn" destination="Rqj-zZ-pHl" id="ujk-Gl-xQ9"/>
                 <outlet property="flowLayout" destination="JFW-AO-KCb" id="ZWM-Ld-hpb"/>
                 <outlet property="saveImageBtn" destination="J2s-NG-9iK" id="r7h-cM-g29"/>
                 <outlet property="successView" destination="isd-2j-Hfc" id="Y6J-gQ-qdB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ckg-xO-DNb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SGImageBrowser">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -108,6 +108,7 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="isd-2j-Hfc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0It-qx-9Ic"/>
                 <constraint firstItem="aJ1-2k-vPt" firstAttribute="width" secondItem="J2s-NG-9iK" secondAttribute="width" id="6MM-5M-hTW"/>
@@ -123,8 +124,16 @@
                 <constraint firstItem="Rqj-zZ-pHl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sZp-zL-zbL"/>
                 <constraint firstItem="aJ1-2k-vPt" firstAttribute="centerX" secondItem="J2s-NG-9iK" secondAttribute="centerX" id="xly-bi-nT3"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Q0X-62-gJi" appends="YES" id="9De-XM-kYV"/>
+            </connections>
             <point key="canvasLocation" x="99.5" y="71.5"/>
         </view>
+        <tapGestureRecognizer id="Q0X-62-gJi">
+            <connections>
+                <action selector="tapCollectionView:" destination="-1" id="yJP-Tz-6LP"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="image_browser_image_all.png" width="196" height="196"/>

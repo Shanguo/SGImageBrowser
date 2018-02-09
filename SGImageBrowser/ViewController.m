@@ -62,12 +62,10 @@ typedef NS_ENUM(NSUInteger, ImageUrlType) {
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     __weak typeof(self) weakSelf = self;
     [SGImageBrowser show:indexPath.row totalCount:self.imgNames.count placeHolderImageOrName:nil dataSource:^(NSInteger index, SGImageBrowserDataSourceBlock  _Nonnull dataSourceBlock) {
-        
         CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
         NSURL *middleUrl = [weakSelf imageUrlWithType:URL_Middle atIndex:index];
         NSURL *originUrl = [weakSelf imageUrlWithType:URL_Origin atIndex:index];
         dataSourceBlock(cell.imageView,nil,middleUrl,originUrl,@"1024KB");
-        
     }];
 }
 

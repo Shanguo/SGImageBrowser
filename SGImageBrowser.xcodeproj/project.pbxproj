@@ -11,9 +11,9 @@
 		8583DB29202AACEC0022440F /* UIAlertController+SG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB27202AACEC0022440F /* UIAlertController+SG.m */; };
 		8583DB32202AD9F80022440F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB30202AD9F80022440F /* CollectionViewCell.m */; };
 		8583DB33202AD9F80022440F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8583DB31202AD9F80022440F /* CollectionViewCell.xib */; };
-		8583DB36202AE77A0022440F /* SGImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB34202AE77A0022440F /* SGImageBrowser.m */; };
-		8583DB38202AE78E0022440F /* SGImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8583DB37202AE78E0022440F /* SGImageBrowser.xib */; };
 		8583DB3C202BF8120022440F /* UIApplication+SG.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB3B202BF8120022440F /* UIApplication+SG.m */; };
+		8583DB61202D62240022440F /* SGImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8583DB5F202D62240022440F /* SGImageBrowser.m */; };
+		8583DB64202D62B80022440F /* SGImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8583DB63202D62B80022440F /* SGImageBrowser.xib */; };
 		85DF9E9C20293ABC0001D896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9E9B20293ABC0001D896 /* AppDelegate.m */; };
 		85DF9E9F20293ABD0001D896 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DF9E9E20293ABD0001D896 /* ViewController.m */; };
 		85DF9EA220293ABD0001D896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DF9EA020293ABD0001D896 /* Main.storyboard */; };
@@ -48,11 +48,11 @@
 		8583DB2F202AD9F80022440F /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		8583DB30202AD9F80022440F /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		8583DB31202AD9F80022440F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		8583DB34202AE77A0022440F /* SGImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGImageBrowser.m; sourceTree = "<group>"; };
-		8583DB35202AE77A0022440F /* SGImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGImageBrowser.h; sourceTree = "<group>"; };
-		8583DB37202AE78E0022440F /* SGImageBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SGImageBrowser.xib; sourceTree = "<group>"; };
 		8583DB3A202BF8120022440F /* UIApplication+SG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SG.h"; sourceTree = "<group>"; };
 		8583DB3B202BF8120022440F /* UIApplication+SG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SG.m"; sourceTree = "<group>"; };
+		8583DB5E202D62240022440F /* SGImageBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGImageBrowser.h; sourceTree = "<group>"; };
+		8583DB5F202D62240022440F /* SGImageBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGImageBrowser.m; sourceTree = "<group>"; };
+		8583DB63202D62B80022440F /* SGImageBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGImageBrowser.xib; sourceTree = "<group>"; };
 		85DF9E9720293ABC0001D896 /* SGImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85DF9E9A20293ABC0001D896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85DF9E9B20293ABC0001D896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -190,9 +190,9 @@
 			children = (
 				85DF9FE2202993620001D896 /* Categorys */,
 				85DF9FD720298F780001D896 /* Resource */,
-				8583DB35202AE77A0022440F /* SGImageBrowser.h */,
-				8583DB34202AE77A0022440F /* SGImageBrowser.m */,
-				8583DB37202AE78E0022440F /* SGImageBrowser.xib */,
+				8583DB5E202D62240022440F /* SGImageBrowser.h */,
+				8583DB5F202D62240022440F /* SGImageBrowser.m */,
+				8583DB63202D62B80022440F /* SGImageBrowser.xib */,
 				85DF9FD320298F780001D896 /* SGImageBrowserCell.h */,
 				85DF9FD520298F780001D896 /* SGImageBrowserCell.m */,
 				85DF9FD620298F780001D896 /* SGImageBrowserCell.xib */,
@@ -323,8 +323,8 @@
 				85DF9EA720293ABD0001D896 /* LaunchScreen.storyboard in Resources */,
 				85DF9EA420293ABD0001D896 /* Assets.xcassets in Resources */,
 				85DF9EA220293ABD0001D896 /* Main.storyboard in Resources */,
+				8583DB64202D62B80022440F /* SGImageBrowser.xib in Resources */,
 				8583DB33202AD9F80022440F /* CollectionViewCell.xib in Resources */,
-				8583DB38202AE78E0022440F /* SGImageBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,9 +444,9 @@
 				85DF9FDC20298F790001D896 /* SGImageBrowserCell.m in Sources */,
 				85DF9E9F20293ABD0001D896 /* ViewController.m in Sources */,
 				8583DB29202AACEC0022440F /* UIAlertController+SG.m in Sources */,
-				8583DB36202AE77A0022440F /* SGImageBrowser.m in Sources */,
 				8583DB3C202BF8120022440F /* UIApplication+SG.m in Sources */,
 				85DF9EAA20293ABD0001D896 /* main.m in Sources */,
+				8583DB61202D62240022440F /* SGImageBrowser.m in Sources */,
 				85DF9E9C20293ABC0001D896 /* AppDelegate.m in Sources */,
 				8583DB32202AD9F80022440F /* CollectionViewCell.m in Sources */,
 			);
