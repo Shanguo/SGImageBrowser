@@ -31,12 +31,27 @@
 
 ```
 __weak typeof(self) weakSelf = self;
+/**
+ * show: 点击了九宫格中的第i个图片，动画弹出第i个图片
+ * totalCount: 照片总数
+ * placeHolderImageOrName: 提供placeHolder可以为本地图片名称，或者UIImage
+ * dataSource: 当滚动到第i个位置是，提供第i个位置的图片
+ */
 [SGImageBrowser show:indexPath.row totalCount:self.imgNames.count placeHolderImageOrName:nil dataSource:^(NSInteger index, SGImageBrowserDataSourceBlock  _Nonnull dataSourceBlock) {
+    // 当滚动到某个位置时，提供那个位置的图片
 	CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    //  懒加载midlleUrl中等大小的图片，点击查看原图按钮加载originUrl
     NSURL *middleUrl = [weakSelf imageUrlWithType:URL_Middle atIndex:index];
     NSURL *originUrl = [weakSelf imageUrlWithType:URL_Origin atIndex:index];
+    /**
+     * 第1个参数imageView: 为了退出浏览时，缩回动画，缩回到这个imageView的位置
+     * 第2个参数: 提供第i个位置图片或者名称用于显示
+     * 第3个参数: 提供第i个位置图片url 用于加载图片
+     * 第4个参数: 提供第i个位置图片原图url,第2,3,4个参数必选一个才能显示图片
+     * 第5个参数: 提供图片大小用于下载原图的按钮显示 @"1024KB"
+     */
     dataSourceBlock(cell.imageView,nil,middleUrl,originUrl,@"1024KB");
-}];      
+}];        
 ```
 - 3. 使用一组图片或者一组图片的url，浏览一组图片
 
