@@ -39,7 +39,7 @@ __weak typeof(self) weakSelf = self;
  */
 [SGImageBrowser show:indexPath.row totalCount:self.imgNames.count placeHolderImageOrName:nil dataSource:^(NSInteger index, SGImageBrowserDataSourceBlock  _Nonnull dataSourceBlock) {
     // 当滚动到某个位置时，提供那个位置的图片
-	CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
     //  懒加载midlleUrl中等大小的图片，点击查看原图按钮加载originUrl
     NSURL *middleUrl = [weakSelf imageUrlWithType:URL_Middle atIndex:index];
     NSURL *originUrl = [weakSelf imageUrlWithType:URL_Origin atIndex:index];
